@@ -1,11 +1,41 @@
 Folder Structure ที่จะใช้ในการจัดวาง
--   k
+-   src/
+        components/
+            ข้อมูลส่วนตัว
+                index.js
+                style.css
+            ข้อมูลเกี่ยวกับการวิ่ง
+                index.js
+                style.css
+            ผู้ติดต่อฉุกเฉิน
+                index.js
+                style.css
+            ข้อมูลทางการแพทย์
+                index.js
+                style.css
+            เสื้อของที่ระลึก
+                index.js
+                style.css
+ 
 
 Library ที่คาดว่าจะใช้สำหรับ Project นี้ พร้อมทั้งระบุด้วยว่าทำไมถึงเลือกใช้ เช่น ใช้ lodash สำหรับการจัดการข้อมูล
--   l
+-   React x Bootstrap ใช้สำหรับในการจัดการ css และมีไฟล์ JS ที่คอยจัดการในเรื่องของ Component หรือส่วนประกอบต่างๆ 
 
 จะต้องจัดการ State ของข้อมูลอย่างไร เพื่อรองรับกับโจทย์นี้ได้
--   p
+-   Hook/
+        useData/
+            index.js
+
 
 จะใช้วิธีใดในการ Validate Form สำหรับการ Save Draft และสำหรับการ Submit
--   
+-   const {data, handleSubmit} = useData();
+    <form onSubmit={handleSubmit(onSubmit)}>
+        <label>...</label>
+        <input ref={data} name=... />
+
+        <label>...</label>
+        <input ref={data} name=... />
+
+        <label>...</label>
+        <input ref={data} name=... />
+    </form>
